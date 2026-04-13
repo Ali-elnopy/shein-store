@@ -23,7 +23,6 @@ const NewsletterSection = () => {
         {/* Subtitle */}
         <p className="text-sm text-gray-500 leading-relaxed max-w-md">
           Early access to drops, exclusive editorial content, and member-only pricing.
-          <br />
           Curated for the few, delivered to you.
         </p>
 
