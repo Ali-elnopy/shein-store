@@ -12,7 +12,7 @@ import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout'
 import Profile from '../pages/Profile'
 import Contact from '../pages/Contact'
-
+import SinUp from '../pages/SinUp'
 const AppRouter = () => {
   return (
     <div className='flex flex-col min-h-screen'>
@@ -26,6 +26,7 @@ const AppRouter = () => {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/auth' element={<Auth />} />
+          <Route path='/signup' element={<SinUp />} />
           <Route path='/wishlist' element={<Wishlist />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/contact' element={<Contact />} />
