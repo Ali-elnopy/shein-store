@@ -37,14 +37,7 @@ const NavBar = () => {
 
         {/* Right Icons */}
         <div className="flex items-center gap-4">
-          {/* Search */}
-          <button className="hidden md:block text-gray-600 hover:text-black transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
-            </svg>
-          </button>
+          
 
           {/* Wishlist */}
           <button className="text-gray-600 hover:text-black transition-colors">
@@ -70,6 +63,7 @@ const NavBar = () => {
           </Link>
 
           {/* Account */}
+          <Link to="/auth">
           <button className="text-gray-600 hover:text-black transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
@@ -77,6 +71,8 @@ const NavBar = () => {
                 d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7z" />
             </svg>
           </button>
+          </Link>
+          
 
           {/* Mobile Menu Button */}
           <button

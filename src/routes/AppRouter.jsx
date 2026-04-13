@@ -15,26 +15,25 @@ import Contact from '../pages/Contact'
 
 const AppRouter = () => {
   return (
-    <Router >
-        <div className='flex flex-col min-h-screen'>
-            <Navbar/>
-            <main className='flex-grow'>
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/shop' element={<Shop/>}/>
-                    <Route path='/product/:id' element={<ProductDetails/>}/>
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/login" element={<Auth />} />
-                    <Route path="/wishlist" element={<Wishlist />} />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/contact" element={<Contact />} />
-                    
-                </Routes>
-            </main>
-            <Footer/>
-        </div>
-    </Router>
+    <div className='flex flex-col min-h-screen'>
+      <Navbar />
+      
+        <main className='flex-grow'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/checkout' element={<Checkout />} />
+          <Route path='/auth' element={<Auth />} />
+          <Route path='/wishlist' element={<Wishlist />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
